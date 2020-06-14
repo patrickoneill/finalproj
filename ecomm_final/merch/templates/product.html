@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Product{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row mt-5">
+        <div class="col-10 mx-auto col-md-6 my-3">
+            <img style="width: 100%" src="{% static 'img/image2.jpg' %}" alt="">        
+        </div>
+        <div class="col-md-10 mx-auto col-md-6 my-3">
+            <div>
+            <h1 class="product_title">Call Of Duty</h1>
+            <h5 class="text_info font_italic mb-0">
+                <p>€70</p>
+            </h5>
+                        
+            <p class="product_description">Product Description</p>
+            <p class="text-justify product_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam error, nostrum facilis quo odit veniam id maxime accusantium velit ipsa, saepe ex dolorem optio similique voluptates perferendis quis minus rem?</p>
+            <p class="text_justify product_text">Coming Soon</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
