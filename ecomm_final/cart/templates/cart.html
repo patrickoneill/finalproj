@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Cart
+{% endblock %}
+{% block content %}
+
+<div class="text-center">
+</br>
+    <div class="text-center product_title">
+        Your Cart Items
+    </div>
+</div>
+<div class="row mx-auto">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                     Cart Items 
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        Checkout
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
