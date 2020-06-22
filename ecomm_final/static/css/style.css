@@ -1,0 +1,38 @@
+body{
+    background: rgb(117, 183, 88);
+}
+
+.product_image {
+    max-width:100%;
+    height:auto;
+}
+
+.product_title {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    letter-spacing: .2em;
+}
+
+.product_text {
+    padding-right: 20px;
+}
+
+.cart_table {
+    min-width: 400px;
+    font-size: 14px;
+}
+
+.cart_tread {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: #fff;
+}
+
+.cart_icon {
+    text-decoration: none;
+    color: rgb(110, 103, 103);
+}
