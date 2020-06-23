@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'merch',
-    'cart',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +65,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'merch.context_processors.menu_links',
+                'merch.context_processors.counter',
+
             ],
         },
     },
@@ -125,3 +127,5 @@ STATIS_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+STRIPE_PUBLISHABLE_KEY = 'pk_test_N00KKdIMATsuHdhbTe4nti97'
+STRIPE_SECRET_KEY = 'sk_test_M3Jq071MHsNdy5bKMK49yEok'
