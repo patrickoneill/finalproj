@@ -1,14 +1,8 @@
 body{
-    background: rgb(117, 183, 88);
-}
-
-.product_image {
-    max-width:100%;
-    height:auto;
+    background: white;
 }
 
 .product_title {
-
     font-size: 20px;
     text-transform: uppercase;
     padding-top: 15px;
@@ -35,4 +29,26 @@ body{
 .cart_icon {
     text-decoration: none;
     color: rgb(110, 103, 103);
+}
+
+.stripe-button-el {
+  width: 100% !important;
+  display: block !important;
+  background-color: #216ab3 !important;
+  margin-bottom: 5px;
+}
+
+.stripe-button-el span {
+  height: 36px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+}
+
+.errorlist li {
+  color: red;
+  font-weight: bold;
+}
+
+.custom_div {
+  margin-bottom: 20px !important;
 }
