@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'merch',
     'stripe',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 STRIPE_PUBLISHABLE_KEY = 'pk_test_N00KKdIMATsuHdhbTe4nti97'
 STRIPE_SECRET_KEY = 'sk_test_M3Jq071MHsNdy5bKMK49yEok'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
