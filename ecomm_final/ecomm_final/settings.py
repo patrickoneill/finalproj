@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ SECRET_KEY = 'abe_l6$+a@_q8=$4$=hd%_xrc%0%l-nes%lstfk7$)pbn+wi_9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://finalproj-gameon.herokuapp.com/']
 
 
 # Application definition
@@ -131,3 +132,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 STRIPE_PUBLISHABLE_KEY = 'pk_test_N00KKdIMATsuHdhbTe4nti97'
 STRIPE_SECRET_KEY = 'sk_test_M3Jq071MHsNdy5bKMK49yEok'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+django_heroku.settings(locals())
